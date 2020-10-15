@@ -13,7 +13,7 @@ all_data.to_csv("all_data.csv", index=False)
 
 df = pd.read_csv("all_data.csv")
 
-new_df = df.loc[(df["90 unit sub Voltage0 Magnitude Channel 1"] > 69.5) &
-                (df["90 unit sub Voltage0 Magnitude Channel 1"] < 78)]
+new_df = df.loc[(df.iloc[:, 3] > 69.5) &
+                (df.iloc[:, 3] < 78)]
 
 new_df.to_csv("all_data_filtered.csv", index=False)
