@@ -1,4 +1,4 @@
-# PMU2014_MagnitudeTests
+# PMU2014 Script
 The script runs a search in the directory for all .csv files
 
 It saves all .csv files into one large .csv file
